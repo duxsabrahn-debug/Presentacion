@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Eduardo Abraahan Duxs</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #020617, #0f172a, #111827);
+            color: white;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .container{
+            width: 90%;
+            margin: auto;
+            padding: 40px 0;
+        }
+
+        .titulo{
+            text-align: center;
+            font-size: 65px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .titulo span{
+            background: linear-gradient(90deg, #00d4ff, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitulo{
+            text-align: center;
+            font-size: 25px;
+            color: #d1d5db;
+            margin-bottom: 20px;
+        }
+
+        .frase{
+            text-align: center;
+            font-style: italic;
+            color: #cbd5e1;
+            margin-bottom: 50px;
+            font-size: 20px;
+        }
+
+        .fila{
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+        }
+
+        .card{
+            flex: 1;
+            min-width: 300px;
+            border-radius: 25px;
+            padding: 35px;
+            box-shadow: 0px 10px 25px rgba(0,0,0,0.4);
+            transition: 0.4s;
+        }
+
+        .card:hover{
+            transform: translateY(-10px);
+        }
+
+        .sobre{
+            background: linear-gradient(135deg, #1d4ed8, #1e3a8a);
+        }
+
+        .intereses{
+            background: linear-gradient(135deg, #065f46, #064e3b);
+        }
+
+        .animal{
+            background: linear-gradient(135deg, #4c1d95, #312e81);
+            width: 100%;
+        }
+
+        h2{
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        p{
+            font-size: 22px;
+            line-height: 1.6;
+        }
+
+        ul{
+            margin-top: 15px;
+            padding-left: 20px;
+        }
+
+        li{
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .animal-contenido{
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .animal-texto{
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .animal-img{
+            flex: 1;
+            text-align: center;
+        }
+
+        .animal-img img{
+            width: 100%;
+            max-width: 500px;
+            border-radius: 20px;
+            box-shadow: 0px 5px 20px rgba(0,0,0,0.5);
+        }
+
+        footer{
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #cbd5e1;
+            font-size: 20px;
+        }
+
+        @media(max-width:768px){
+
+            .titulo{
+                font-size: 40px;
+            }
+
+            .subtitulo{
+                font-size: 20px;
+            }
+
+            h2{
+                font-size: 30px;
+            }
+
+            p, li{
+                font-size: 18px;
+            }
+
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <h1 class="titulo">
+            EDUARDO <span>ABRAAHAN DUXS</span>
+        </h1>
+
+        <p class="subtitulo">
+            Estudiante de Desarrollo Web 2
+        </p>
+
+        <p class="frase">
+            "El código es como el humor. Cuando tienes que explicarlo, es malo."
+        </p>
+
+        <!-- FILA 1 -->
+        <div class="fila">
+
+            <div class="card sobre">
+
+                <h2>Sobre Mí</h2>
+
+                <p>
+                    Me llamo Eduardo Abraahan Duxs.
+                    Soy estudiante de Desarrollo Web 2 y me gusta aprender
+                    sobre programación, diseño web y nuevas tecnologías.
+                </p>
+
+                <br>
+
+                <p>
+                    Me considero una persona responsable,
+                    creativa y con muchas ganas de seguir aprendiendo.
+                </p>
+
+            </div>
+
+            <div class="card intereses">
+
+                <h2>Mis Intereses</h2>
+
+                <ul>
+                    <li>Desarrollo Web</li>
+                    <li>Programación</li>
+                    <li>Diseño de Interfaces</li>
+                    <li>Aprender cosas nuevas</li>
+                    <li>Escuchar música</li>
+                    <li>Ver memes 😎</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- FILA 2 -->
+        <div class="card animal">
+
+            <div class="animal-contenido">
+
+                <div class="animal-texto">
+
+                    <h2>Mi Animal Favorito 🐶</h2>
+
+                    <p>
+                        Mi animal favorito es el perro.
+                    </p>
+
+                    <br>
+
+                    <p>
+                        Son leales, amigables y siempre están ahí
+                        para alegrar el día. 💜
+                    </p>
+
+                </div>
+
+                <div class="animal-img">
+
+                    <!-- CAMBIA "foto.jpg" POR EL NOMBRE DE TU IMAGEN -->
+                    <img src="imagenes/hector.jpeg" alt="Mi foto">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer>
+            ❤️ Hecho por EDUARDO ABRAAHAN DUXS | 2026
+        </footer>
+
+    </div>
+
+</body>
+</html>
